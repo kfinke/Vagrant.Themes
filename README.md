@@ -30,11 +30,16 @@ vagrant up
 This will download and initialise the basic image
 (later on this command will be blazing fast, as the base vm is already available on your system).
 
+Always shutdown the virtual machine before you shutdown the real machine it is running on. Otherwise the virtual machine could get in an undefined status and you could run into problems with the virtual machine when starting it again.
+
+```bash
+vagrant halt    - shutdown the virtual maschine
+```
+
 Other important commands
 ```bash
 vagrant suspend - suspend the CM
 vagrant status  - show status of the virtual maschine
-vagrant halt    - shutdown the virtual maschine
 vagrant destroy - destroy the virtual maschine (drop virtual drives, ...)
 ```
 
